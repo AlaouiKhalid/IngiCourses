@@ -1,0 +1,359 @@
+.dy-push-preview .topbar .battery:after,
+.dy-push-preview .topbar .battery:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #ffffff;
+}
+.dy-push-preview {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    height:auto !important;
+    width:95%;
+    margin:0 auto;
+}
+
+.dy-push-preview .topbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+}
+
+.dy-push-preview .topbar .time {
+  width: 100%;
+  color: #ffffff;
+  top: 5px;
+  text-align: right;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  margin-right: 12px;
+  margin-left: 6px;
+  font-size: larger;
+}
+
+.dy-push-preview .topbar .battery {
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  right: 10px;
+  top: 10px;
+  border-radius: 2px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background-clip: padding-box;
+}
+
+.dy-push-preview .topbar .battery:before {
+  width: 3px;
+  height: 4px;
+  top: 2px;
+  right: -2px;
+  border-radius: 1px;
+}
+
+.dy-push-preview .topbar .battery:after {
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 8px;
+}
+
+.dy-push-preview .notification {
+  background: #ffffff;
+  color: #111111;
+  width: 100%;
+  z-index: 9;
+  border-radius: 2px;
+  min-height: 80px;
+}
+
+.dy-push-preview .titlebar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  z-index: 10;
+  border-radius: 8px 8px 0 0;
+  background: rgba(255, 255, 255, 0.75);
+  text-align: left;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 16px;
+  padding-top: 10px;
+  
+}
+
+.dy-push-preview .titlebar .icon {
+  left: 8px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #607d8b;
+  border-radius: 4px;
+  display: inline-block;
+  float: left;
+  margin: 0 4px 0 0;
+}
+
+.dy-push-preview .titlebar .title {
+  text-align: left;
+  font-size: 11px;
+  margin-right: 4px;
+  color: #607d8b;
+}
+
+.dy-push-preview .titlebar .timestamp {
+  width: 50px;
+  display: inline-block;
+  font-size: 11px;
+  color: gray;
+}
+
+.dy-push-preview .notification-block {
+  position: relative;
+  background: #ffffff;
+  padding: 0 16px 16px;
+}
+
+.dy-push-preview .notification-block .message {
+  position: relative;
+}
+
+.dy-push-preview .notification-block p {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.dy-push-preview .notification-block .text {
+  color: gray;
+}
+
+.notification-block.collapsed .caption-img {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding-top: 16px;
+}
+
+.notification-block.collapsed .thumb-img {
+  width: 42px;
+  height: 42px;
+  float: right;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.notification-block .message > img {
+  height: 160px;
+  width: 100%;
+}
+
+.dy-action-buttons button.NONE,
+.dy-action-buttons button.None,
+.dy-action-buttons button.none,
+.dy-action-buttons button:empty {
+  display: none;
+}
+
+.notification-block.expanded .caption-img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dy-push-preview .dy-action-buttons {
+  padding: 0;
+}
+
+.dy-push-preview .dy-action-buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dy-push-preview .dy-action-buttons button {
+  background: 0 0;
+  border: none;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.-expanded .notification-block.collapsed {
+  display: none;
+}
+
+.-collapsed .notification-block.collapsed,
+.-expanded .notification-block.expanded {
+  display: block;
+}
+
+.-collapsed .dy-action-buttons,
+.-collapsed .notification-block.expanded {
+  display: none;
+}
+
+.-expanded .dy-action-buttons {
+  display: block;
+}
+
+.dy-webshot-capture-area .notification-block.collapsed {
+  display: none !important;
+}
+.android {
+  width: 80%;
+  height: auto;
+  min-height: 460px;
+  background: #000000;
+  border-radius: 20px 20px 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+.android .top {
+  height: 10%;
+  text-align: center;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+.android .top div {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 15px;
+  height: 15px;
+  border-radius: 1000px;
+}
+.android .top div:nth-child(2) {
+  width: 100px;
+}
+.android .bottom {
+  height: 10%;
+  position: relative;
+}
+.android .bottom div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 30px;
+  border: 2px solid #fffffff5;
+  border-radius: 20px;
+}
+.android .screen {
+  height: auto;
+  min-height: inherit;
+  background: url("../images/preview/aurora.jpg");
+  background-size: cover;
+  margin: 0 1.2rem;
+  position: relative;
+  padding-bottom: 20px;
+}
+.android .screen .statusBar {
+  height: 4%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.android .screen .statusBar > * {
+  margin-right: 5px;
+}
+.android .screen .statusBar span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.android .screen .statusBar .fa-wifi,
+.android .screen .statusBar .fa-signal {
+  font-size: 0.8rem;
+}
+.android .screen .datetime {
+  text-align: center;
+  color: white;
+  margin-bottom:10px;
+}
+.android .screen .datetime div:first-child {
+  font-size: 3.5rem;
+}
+.android .screen .bottomMessage {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+}
+.android .screen .lockScreen {
+  width: 100%;
+  height: 96%;
+  background: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+.android .screen .lockScreen div {
+  position: relative;
+  top: 45%;
+  height: 50%;
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  justify-items: center;
+}
+.android .screen .lockScreen div div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
